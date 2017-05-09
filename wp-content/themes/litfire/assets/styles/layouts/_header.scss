@@ -1,0 +1,64 @@
+header{
+	.navbar{
+		margin: 0;
+		border-radius: 0;
+		background-color: rgba(1, 1, 1, 0.7);
+		border: none;		
+		.navbar-header{
+			padding: 10px 0;
+		}
+		.navbar-nav{
+			padding: 10px 0;
+			li{
+				&:first-child{margin-left: 0;}
+				&:last-child{margin-right: 0;}
+				a{
+					text-transform: uppercase;
+					font-family: $roboto;
+					font-size: 16px;
+					color: $white;
+				}
+				@media(min-width: $screen-lg-min){
+					margin-left: 106px;					
+				}
+				@media(min-width: $screen-md-min) and (max-width: $screen-md-max){
+					margin-left: 66px;					
+				}
+				@media(min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+					margin-left: 22px;					
+				}
+			}
+			.fahome a, .fabook a, .faauthor a, .faorder a, .fablog a, .facontact a{
+				&::before{
+					font-family: 'FontAwesome';
+					font-size: 16px;
+					color: $white;
+					margin-right: 5px;
+				}
+				&:hover{&::before{color: $lightbrown;}}
+			}
+			.fahome a{ &::before{content: '\f015';}}
+			.fabook a{ &::before{content: '\f02d';}}
+			.faauthor a{ &::before{content: '\f007';}}
+			.faorder a{ &::before{content: '\f07a';}}
+			.fablog a{ &::before{content: '\f15c';}}
+			.facontact a{ &::before{content: '\f0e0';}}
+		}		
+	}
+	.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{color: $lightbrown !important;}
+	.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+		color: $lightbrown !important;
+		background-color: transparent;
+		&::before{color: $lightbrown;}
+	}
+}
+
+.blog, .single-post, .archive, .search-results{
+	.current-menu-item, .current_page_item, .current_page_parent{
+		a{
+			color: $lightbrown !important;
+			background-color: transparent;
+			&::before{color: $lightbrown !important;}
+		}
+	}
+}

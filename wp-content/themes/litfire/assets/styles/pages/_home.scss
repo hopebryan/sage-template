@@ -1,0 +1,128 @@
+#banner{
+	min-height: 800px;
+	background: url('../../dist/images/banner-bg.jpg') no-repeat;
+	background-position: right top;
+	background-size: cover;
+	.banner-cont{
+		position: relative;				
+		@media(min-width: $screen-lg-min){
+			padding: 120px 0 80px;
+			.banner-title{}
+			.banner-bat{
+				img{
+				    position: absolute;
+					bottom: -10px;
+					right: 0;
+					left: -40px;
+				}
+			}
+			.buy-book{
+				position: absolute;
+				bottom: 20px;
+				left: 95px;
+				display: inline-block;
+			}
+		}
+		@media(min-width: $screen-md-min) and (max-width: $screen-md-max){
+			padding: 120px 0 80px;
+			.banner-title{}
+			.banner-bat{
+				img{
+				    position: absolute;
+					bottom: 5px;
+					right: 0;
+					left: -40px;
+				}
+			}
+			.buy-book{
+				position: absolute;
+				bottom: 20px;
+				left: 75px;
+				display: inline-block;
+			}
+		}
+		@media(min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			padding: 120px 0 80px;
+			.banner-title{
+				text-align: center;
+			}
+			.banner-bat{
+				img{
+				    position: absolute;
+					bottom: 5px;
+					right: 0;
+					left: 0;
+				}
+			}
+			.buy-book{
+				position: absolute;
+				bottom: 20px;
+				right: 0;
+				left: 0;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+		@media(max-width: $screen-xs-max){
+			padding: 150px 0 80px;
+			.banner-title{
+				text-align: center;
+			}
+			.banner-bat{
+				display: none;
+			}
+			.buy-book{
+				position: absolute;
+				bottom: 20px;
+				right: 0;
+				left: 0;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}	
+}
+
+#review{
+	background-color: #f3f3f3;
+	min-height: 400px;
+	padding: 5% 0;
+	position: relative;
+	#myCarousel{
+		ol{
+			bottom: 0;
+			li{
+				border: 0;
+				background-color: #c4c4c4;
+				margin: 0 3px;
+			}
+			.active{
+				border: 0;
+				background-color: $darkbrown;
+			}
+		}
+		.carousel-inner{
+			.item{
+				.review-cont{
+					p{color: #330000;}
+					.readers-name{font-weight: 700; color: #60483c;}
+				}
+				@media(min-width: $screen-md-min){
+					height: 250px;
+				}
+				@media(min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+					height: 300px;
+				}
+				@media(min-width: 480px) and (max-width: $screen-xs-max){
+					height: 320px;
+				}
+				@media(min-width: 400px) and (max-width: 479px){
+					height: 370px;
+				}
+				@media(max-width: 399px){
+					height: 470px;
+				}
+			}
+		}
+	}
+}

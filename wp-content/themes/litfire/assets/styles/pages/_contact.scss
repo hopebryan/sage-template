@@ -1,0 +1,65 @@
+#get-in-touch{
+	color: #FFF;
+	background: #60483c; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #60483c 0%, #6f5548 50%, #6f5548 50%, #6f5548 100%, #60483c 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #60483c 0%,#6f5548 50%,#6f5548 50%,#6f5548 100%,#60483c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #60483c 0%,#6f5548 50%,#6f5548 50%,#6f5548 100%,#60483c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60483c', endColorstr='#60483c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	position: relative;
+	padding: 60px 0;
+	.contact-cont{
+		.social-media{
+			ul{
+				padding: 0;
+				li{
+					display: inline-block;
+					border: 1px solid #ffffff;
+					margin: 0;
+					width: 33%;
+					text-align: center;
+					padding: 15px 0;
+					a{
+						font-family: $roboto;
+						font-size: 18px;
+						color: #ffffff;
+						.fa-facebook, .fa-twitter{font-size: 24px;}
+						.fa-goodreads{
+							font-family: 'Arial';
+							font-size: 24px;
+							font-weight: 700;							
+						}
+						&:hover{
+							color: $yellow;
+						}
+					}
+				}
+				.lifacebook{}
+				.litwitter{margin-left: -5px;}
+				.ligoodreads{margin-left: -5px; padding: 16px 0 15px}
+				@media(max-width: 400px){
+					li{
+						display: block;
+						width: 100%;
+					}
+					.litwitter, .ligoodreads{
+						margin: -1px 0 0;
+					}
+				}
+			}
+		}
+	}
+	@media(min-width: $screen-md-min){
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			width: 45%;
+			background: url('../../dist/images/contact-bg.jpg') no-repeat;
+			background-size: cover;
+			background-position: left center;
+		}
+	}	
+}

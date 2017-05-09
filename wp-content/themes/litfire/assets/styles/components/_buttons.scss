@@ -1,0 +1,189 @@
+.buy-book{	
+	a{
+		display: inline-block;
+		font-family: $bitter;
+		font-size: 24px;
+		color: $white;
+		text-transform: uppercase;
+		border-radius: 10px;
+		padding: 30px 0;
+		text-align: center;
+		width: 350px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b6857+29,60483c+100 */
+		background: #8b6857; /* Old browsers */
+		background: -moz-linear-gradient(top, #8b6857 29%, #60483c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #8b6857 29%,#60483c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #8b6857 29%,#60483c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b6857', endColorstr='#60483c',GradientType=0 ); /* IE6-9 */
+		&:hover{
+			background: $darkbrown;
+		}
+	}
+	@media(max-width: 400px){
+		a{
+			width: 275px;
+			padding: 25px 0;
+		}		
+	}
+}
+
+.prices{
+	.kindle, .paperback, .hardcover{
+		margin: 7px 0;
+		a{
+			display: inline-block;
+			font-family: $bitter;
+			font-size: 20px;
+			color: $white;
+			text-transform: uppercase;
+			border-radius: 10px;
+			padding: 20px 0;
+			width: 350px;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b6857+29,60483c+100 */
+			background: #8b6857; /* Old browsers */
+			background: -moz-linear-gradient(top, #8b6857 29%, #60483c 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #8b6857 29%,#60483c 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #8b6857 29%,#60483c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b6857', endColorstr='#60483c',GradientType=0 ); /* IE6-9 */
+			&:hover{
+				background: $darkbrown;
+				-webkit-transition: color 0.25s ease-in;
+				-moz-transition: color 0.25s ease-in;
+				-ms-transition: color 0.25s ease-in;
+				-o-transition: color 0.25s ease-in;
+				transition: color 0.25s ease-in;
+			}
+		}
+	}
+	@media(max-width: 500px){
+		.kindle, .paperback, .hardcover{			
+			a{
+				width: 250px;
+			}
+		}
+	}
+}
+
+.read-more{	
+	a{
+		display: inline-block;
+		font-family: $bitter;
+		font-size: 16px;
+		color: $white;
+		text-transform: uppercase;
+		border-radius: 10px;
+		padding: 20px 0;
+		text-align: center;
+		width: 150px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b6857+29,60483c+100 */
+		background: #8b6857; /* Old browsers */
+		background: -moz-linear-gradient(top, #8b6857 29%, #60483c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #8b6857 29%,#60483c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #8b6857 29%,#60483c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b6857', endColorstr='#60483c',GradientType=0 ); /* IE6-9 */
+		&:hover{
+			background: $darkbrown;
+		}
+	}
+}
+
+.reply{	
+	a{
+		display: inline-block;
+		font-family: $bitter;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+		border-radius: 10px;
+		padding: 10px 0;
+		text-align: center;
+		width: 120px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b6857+29,60483c+100 */
+		background: #8b6857; /* Old browsers */
+		background: -moz-linear-gradient(top, #8b6857 29%, #60483c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #8b6857 29%,#60483c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #8b6857 29%,#60483c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b6857', endColorstr='#60483c',GradientType=0 ); /* IE6-9 */
+		&:hover{
+			background: $darkbrown;
+		}
+	}
+}
+
+.form-submit{
+	.submit{
+		text-transform: uppercase !important;
+		color: $white !important;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b6857+29,60483c+100 */
+		background: #8b6857 !important; /* Old browsers */
+		background: -moz-linear-gradient(top, #8b6857 29%, #60483c 100%) !important; /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #8b6857 29%,#60483c 100%) !important; /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #8b6857 29%,#60483c 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b6857', endColorstr='#60483c',GradientType=0 ) !important; /* IE6-9 */
+		width: 150px !important;
+		text-align: center !important;
+		padding: 15px 0 !important;
+		display: block !important;
+		border-radius: 10px !important;
+		border: none !important;
+		&:hover{
+			background: $darkbrown !important;
+		}
+	}
+}
+
+#excerpt{
+	.kindle, .paperback, .hardcover{
+		display: inline-block;
+		margin: 10px 5px;
+		a{
+			background: transparent;
+			border: 2px solid #ffffff;
+			width: 250px;
+			&:hover{
+				border-color: $yellow;
+				color: $yellow;
+				-webkit-transition: color 0.25s ease-in;
+				-moz-transition: color 0.25s ease-in;
+				-ms-transition: color 0.25s ease-in;
+				-o-transition: color 0.25s ease-in;
+				transition: color 0.25s ease-in;
+			}
+		}
+		@media(max-width: 400px){
+			a{
+				width: 220px !important;
+			}
+		}
+	}
+}
+
+.sbmt-button{
+	.sbmt{
+		background: transparent;
+		border: 2px solid #FFF;
+		width: 150px;
+		padding: 15px 0;
+		font-size: 20px;
+		color: #ffffff;
+		border-radius: 10px;
+		&:hover{
+			color: $yellow !important;
+			-webkit-transition: color 0.25s ease-in;
+			-moz-transition: color 0.25s ease-in;
+			-ms-transition: color 0.25s ease-in;
+			-o-transition: color 0.25s ease-in;
+			transition: color 0.25s ease-in;
+			border-color: $yellow;
+		}
+		@media(min-width: $screen-md-min) and (max-width: $screen-md-max){
+			width: 130px;			
+		}
+	}
+	.ajax-loader{
+		float: left;
+		@media(max-width: $screen-sm-max){
+			float: none;
+		}
+	}
+}
